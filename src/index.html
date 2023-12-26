@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram with Tailwind CSS</title>
+    <link rel="stylesheet" href="../dist//output.css">
+</head>
+<body>
+    <div class="sticky top-0 border-b shadow-sm bg-white z-30">
+
+      <!-- HEADER -->
+
+      <div class="flex justify-between h-24 items-center mx-4 xl:max-w-6xl xl:mx-auto">
+          <!-- Left -->
+          <div class="cursor-pointer w-24 hidden lg:inline-grid">
+            <img 
+                src="https://www.adaptimmo.com/wp-content/uploads/2023/04/instagram-1594387_1280.png" 
+                alt="instagram-logo">
+          </div>
+          <div class="cursor-pointer w-10 lg:hidden">
+            <img 
+                src="https://lecercledeseconomistes.fr/wp-content/uploads/2019/09/instagram-icon-300x300.png" 
+                alt="instagram-logo">
+          </div>
+          
+          <!-- Middle -->
+
+          <div class="relative mt-1">
+            <div class="absolute top-2 left-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                  
+            </div>
+            <input placeholder="Search" class="pl-10 rounded-md focus:ring-black focus:border-black bg-gray-50 border-gray-500 text-sm" type="text">
+          </div>
+
+          <!-- Right -->
+
+          <div class="flex space-x-4 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out hidden md:inline-flex">
+                <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <img class="h-10 rounded-full cursor-pointer" src="https://pbs.twimg.com/profile_images/1422928729983098882/HwCU4MsC_400x400.jpg" alt="">
+          </div>
+
+      </div>
+
+    </div>
+    
+    <!-- Feed -->
+
+    <main class="grid grid-cols-1 md:grid-cols-3 mx-auto md:max-w-6xl">
+        <section class="md:col-span-2">
+          <!-- Left -->
+
+            <!-- Stories -->
+
+            <div class="flex space-x-2 p-6 border overflow-x-scroll scrollbar-none rounded-sm">
+                <div class="cursor-pointer relative group">
+                    <img 
+                        src="https://pbs.twimg.com/profile_images/1422928729983098882/HwCU4MsC_400x400.jpg" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 group-hover:scale-110 transition-transform duration-200 ease-out"
+                    />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 absolute top-4 left-4 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>    
+                    <p class="text-xs w-14 truncate text-center">fallansou bostonalias manhattan</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=1" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Alice</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=2" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Bébe Bineta</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=3" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Boy Jump</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=4" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Mahmoud</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=5" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Noemie</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=6" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Paul Martin</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=7" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Master Elias</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=8" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Emilien</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=9" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Kouna Diop</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=10" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Ami Diop</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=11" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Kana FALL</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=12" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Raoul Diagne</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=13" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Modou Fass de Lorme</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img 
+                        src="https://i.pravatar.cc/150?img=14" 
+                        alt=""
+                        class="h-14 w-14 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out"/>
+                        <p class="text-xs w-14 truncate text-center">Moussa Baye FALL</p>
+                </div>
+            </div>
+
+            <!-- Posts -->
+            <div class="border my-7 bg-white rounded-md">
+                <!-- Post Header -->
+                <div class="flex items-center p-5">
+                    <img class="h-12 rounded-full border p-1 mr-3" src="https://pbs.twimg.com/profile_images/1422928729983098882/HwCU4MsC_400x400.jpg" alt="user-image">
+                    <p class="flex-1 font-bold ">fallansou bostonalias manhattan</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                      </svg>
+                </div>
+
+                <!-- Post Image -->
+
+                <img class="w-full object-cover" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                
+                <!-- Post buttons -->
+                
+                <div class="flex justify-between px-4 pt-4">
+                    <div class="flex space-x-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn rotate-45 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                          </svg>
+                    </div>
+                </div>
+
+                <!-- Post comments -->
+
+                  <!-- Caption -->
+
+                  <p class="p-5 truncate">
+                    <span class="font-bold mr-2">fallansou bostonalias manhattan</span>
+                    Nice view
+                  </p>
+
+                  <!-- Comments -->
+
+                  <div class="mx-10 max-h-24 overflow-y-scroll scrollbar-none">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=1" alt="">
+                        <p class="font-semibold">Alice</p>
+                        <p class="flex-1 truncate">nice</p>
+                        <p>2 hours ago</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=2" alt="">
+                        <p class="font-semibold">Bébé Bineta</p>
+                        <p class="flex-1 truncate">nice</p>
+                        <p>5 hours ago</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=3" alt="">
+                        <p class="font-semibold">Boy jump</p>
+                        <p class="flex-1 truncate">It's a wonderful viewBox</p>
+                        <p>2 days ago</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=4" alt="">
+                        <p class="font-semibold">Mahmoud</p>
+                        <p class="flex-1 truncate">Great View</p>
+                        <p>1 month ago</p>
+                    </div>
+                  </div>
+                <!-- Post input box -->
+                <form class="flex items-center p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                     </svg>
+                     <input class="border-none flex-1 focus:ring-0" type="text" placeholder="Enter your comment" >
+                     <button class="font-bold text-blue-400">Post</button>
+                </form>
+            </div>
+            <div class="border my-7 bg-white rounded-md">
+                <!-- Post Header -->
+                <div class="flex items-center p-5">
+                    <img class="h-12 rounded-full border p-1 mr-3" src="https://pbs.twimg.com/profile_images/1422928729983098882/HwCU4MsC_400x400.jpg" alt="user-image">
+                    <p class="flex-1 font-bold">fallansou bostonalias manhattan</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                      </svg>
+                </div>
+
+                <!-- Post Image -->
+
+                <img class="w-full object-cover" src="https://media.istockphoto.com/id/1190332974/fr/photo/mangroves-du-sénégal-vue-aérienne-de-la-forêt-de-mangrove-dans-le-parc-national-de-saloum.jpg?s=612x612&w=0&k=20&c=Iipl2zIa-KLJoXxaH-9APaYVFhibfbO2Rhumw9uQ7ic=" alt="">
+                
+                <!-- Post buttons -->
+                
+                <div class="flex justify-between px-4 pt-4">
+                    <div class="flex space-x-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn" fill="red" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn rotate-45 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn" fill="black" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                          </svg>
+                    </div>
+                </div>
+
+                <!-- Post comments -->
+
+                  <!-- Caption -->
+
+                  <p class="p-5 truncate">
+                    <span class="font-bold"> 2 likes</span>
+                    <br/>
+                    <span class="font-bold mr-2">fallansou bostonalias manhattan</span>
+                    Nice view
+                  </p>
+
+                  <!-- Comments -->
+
+                  <div class="mx-10 max-h-24 overflow-y-scroll scrollbar-none">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=1" alt="">
+                        <p class="font-semibold">Alice</p>
+                        <p class="flex-1 truncate">nice</p>
+                        <p>2 hours ago</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=2" alt="">
+                        <p class="font-semibold">Bébé Bineta</p>
+                        <p class="flex-1 truncate">nice</p>
+                        <p>5 hours ago</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=3" alt="">
+                        <p class="font-semibold">Boy jump</p>
+                        <p class="flex-1 truncate">It's a wonderful viewBox</p>
+                        <p>2 days ago</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=4" alt="">
+                        <p class="font-semibold">Mahmoud</p>
+                        <p class="flex-1 truncate">Great View</p>
+                        <p>1 month ago</p>
+                    </div>
+                  </div>
+                <!-- Post input box -->
+                <form class="flex items-center p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                     </svg>
+                     <input class="border-none flex-1 focus:ring-0" type="text" placeholder="Enter your comment" >
+                     <button class="font-bold text-blue-400">Post</button>
+                </form>
+            </div>
+        </section>
+            
+        <section class="hidden md:inline-grid md:col-span-1">
+          <!-- Right -->
+          <div class="fixed w-[380px]">
+            <!-- Mini Profile  -->
+            <div class="flex items-center justify-between mt-14 ml-10">
+                <img class="h-16 rounded-full border p-[2px]" src="https://pbs.twimg.com/profile_images/1422928729983098882/HwCU4MsC_400x400.jpg" alt="user-image">
+            
+                <div class="flex-1 ml-4">
+                  <h2 class="font-bold">fallansou</h2>
+                  <h3 class="text-sm text-gray-400">Welcome to instagram</h3>
+                </div>
+                <button class="font-semibold text-blue-400 text-sm">Sign out</button>
+            </div>
+
+            <!-- Suggestion -->
+            <div class="mt-4 ml-10">
+                <div class="flex justify-between mb-5 text-sm">
+                    <h3 class="font-bold text-gray-400">Suggestion for you</h3>
+                    <button class="text-gray-600 font-semibold">See all</button>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <img class="rounded-full h-10 border p-[2px]" src="https:/i.pravatar.cc/150?img=17" alt="">
+                    <div class="flex-1 ml-4">
+                        <h2 class="font-semibold text-sm">john26375</h2>
+                        <h3 class="text-sm text-gray-400">Manager</h3>
+                    </div>
+                    <button class="font-semibold text-blue-400 text-sm">Follow</button>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <img class="rounded-full h-10 border p-[2px]" src="https:/i.pravatar.cc/150?img=18" alt="">
+                    <div class="flex-1 ml-4">
+                        <h2 class="font-semibold text-sm">david</h2>
+                        <h3 class="text-sm text-gray-400">Manager</h3>
+                    </div>
+                    <button class="font-semibold text-blue-400 text-sm">Follow</button>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <img class="rounded-full h-10 border p-[2px]" src="https:/i.pravatar.cc/150?img=19" alt="">
+                    <div class="flex-1 ml-4">
+                        <h2 class="font-semibold text-sm">sarah</h2>
+                        <h3 class="text-sm text-gray-400">Engineer</h3>
+                    </div>
+                    <button class="font-semibold text-blue-400 text-sm">Follow</button>
+                </div>
+            </div>
+          </div>
+
+
+        </section>
+    </main>
+</body>
+</html>
